@@ -1,0 +1,19 @@
+#
+# Makefile ESQUELETO
+#
+# regra "clean" para remover todos os objetos gerados.
+#
+# NECESSARIO adaptar este esqueleto de makefile para suas necessidades.
+#
+# 
+
+CC=gcc
+LIB_DIR=../lib
+INC_DIR=../include
+BIN_DIR=../bin
+SRC_DIR=../src
+
+all:
+	
+teste: main.c
+	gcc -o main main.c -I$(INC_DIR) -L$(LIB_DIR) -lt2fs -Wall
